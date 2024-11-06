@@ -1,5 +1,5 @@
 import { test,expect } from "../../Fixtures";
-import MoxHomePage from "../../pages/Moxfield/HomePage";
+
 
 test('Verify Moxfield Home Screen',async ({moxHomePage}) => {
 
@@ -10,6 +10,6 @@ test('Verify Moxfield Home Screen',async ({moxHomePage}) => {
 test('Verify Commander Precon Page',async ({moxHomePage}) => {
 
     await moxHomePage.clickoncprecons();
-    await expect(moxHomePage.page).toHaveURL('https://www.moxfield.com/decks/public?format=commanderPrecons')
+    await expect(moxHomePage.page).toHaveURL('https://www.moxfield.com/decks/public?q=eyJmb3JtYXQiOiJjb21tYW5kZXJQcmVjb25zIn0=')
 
 });
