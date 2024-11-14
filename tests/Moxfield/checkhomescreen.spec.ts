@@ -7,9 +7,9 @@ test('Verify Moxfield Home Screen',async ({moxHomePage}) => {
 
 });
 
-test('Verify Commander Precon Page',async ({moxHomePage}) => {
+test('Verify Commander Precon Page',async ({moxHomePage,decksPage}) => {
 
     await moxHomePage.clickoncprecons();
-    await expect(moxHomePage.page).toHaveURL('https://www.moxfield.com/decks/public?q=eyJmb3JtYXQiOiJjb21tYW5kZXJQcmVjb25zIn0=')
+    await expect(decksPage.page).toHaveURL('https://www.moxfield.com/decks/public?q=eyJmb3JtYXQiOiJjb21tYW5kZXJQcmVjb25zIn0=')
 
 });
